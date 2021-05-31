@@ -52,12 +52,22 @@ const Container = styled.div`
     h3 {
         margin-bottom: 1rem;
     }
+    @media only screen and (min-width: 992px) {
+        flex-direction: row;
+        height: 25rem;
+        border-top: 2px groove #b1b0b0;
+        margin-top: 1rem;
+    }
 `
 const AboutContainer = styled.div`
     margin-top: 2rem;
     padding: 2rem;
     p {
         margin-bottom: 1rem;
+    }
+    
+    @media only screen and (min-width: 992px) {
+        width: 33%;
     }
 `
 
@@ -69,6 +79,11 @@ const ServicesContainer = styled.div`
 
     a{
         margin-top: 1rem;
+        cursor: pointer;
+    }
+
+    @media only screen and (min-width: 992px) {
+        width: 33%;
     }
 `
 
@@ -86,5 +101,10 @@ const NewsletterContainer = styled.div`
         color: white;
         background-color: #161616; 
         margin-left 1rem;
+        cursor: pointer;
+    }
+
+    @media only screen and (min-width: 992px) {
+        width: 33%;
     }
 `

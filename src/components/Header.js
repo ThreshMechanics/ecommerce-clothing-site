@@ -13,7 +13,7 @@ function Header() {
             </MobileMenuContainer>
             <MenuContainer>
                 <a>
-                    <span>Home</span>
+                    <span className='home-menu'>Home</span>
                 </a>
                 <a>
                     <span>Suits</span>
@@ -64,6 +64,10 @@ const MenuContainer = styled.div`
 
         span {
             cursor: pointer;
+        }
+
+        .home-menu{
+            text-decoration: underline;
         }
     }
 `

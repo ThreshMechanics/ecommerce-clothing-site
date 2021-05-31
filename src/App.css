@@ -34,8 +34,8 @@ body {
 
 .button-primary-white:hover {
   color: white;
-  background: transparent;
-  border: 3px solid black;
+  background: #161616;
+  border: 2px solid white;
 }
 
 .product-button {

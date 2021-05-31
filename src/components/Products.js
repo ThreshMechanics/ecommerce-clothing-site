@@ -29,6 +29,15 @@ export default Products
 
 const Container = styled.div`
     height: 60rem;
+
+    @media only screen and (min-width: 992px) {
+        height: 20rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3rem;
+        padding: 0rem 1rem;
+    }
 `
 
 const WatchContainer = styled.div`
@@ -51,6 +60,10 @@ const WatchContainer = styled.div`
     }
     a {
         font-size: .7rem;
+    }
+    @media only screen and (min-width: 992px) {
+        width: 33%;
+        height: 100%;
     }
 `
 const SuitContainer = styled.div`
@@ -78,6 +91,11 @@ const SuitContainer = styled.div`
     a {
         margin-top: .8rem;
     }
+
+    @media only screen and (min-width: 992px) {
+        width: 33%;
+        height: 100%;
+    }
 `
 
 const ShoeContainer = styled.div`
@@ -97,5 +115,10 @@ const ShoeContainer = styled.div`
         color: white;
         font-size: 2rem;
         padding: .3rem 0rem;
+    }
+
+    @media only screen and (min-width: 992px) {
+        width: 33%;
+        height: 100%;
     }
 `

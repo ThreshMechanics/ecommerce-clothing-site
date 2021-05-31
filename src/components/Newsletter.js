@@ -53,11 +53,13 @@ const NewsletterContainer = styled.div`
         margin-left: 2rem;
     }
     a {
+        width: 100%;
         text-align: center;
         padding: 14px;
         height: 50%;
         color: white;
         background-color: #161616; 
         margin-left: 2rem;
+        cursor: pointer;
     }
 `
