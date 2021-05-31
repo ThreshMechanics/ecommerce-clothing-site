@@ -16,16 +16,16 @@ function Header() {
                     <span>Home</span>
                 </a>
                 <a>
-                    <span>Home</span>
+                    <span>Suits</span>
                 </a>
                 <a>
-                    <span>Home</span>
+                    <span>Watches</span>
                 </a>
                 <a>
-                    <span>Home</span>
+                    <span>Shoes</span>
                 </a>
                 <a>
-                    <span>Home</span>
+                    <span>Cart (0)</span>
                 </a>
             </MenuContainer>
         </Container>
@@ -39,11 +39,14 @@ const Container = styled.div`
     background: transparent;
     position: absolute;
     margin-top: 1rem;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    @media only screen and (min-width: 992px) {
+        height: 70px;
+    }
 `
 
 const LogoContainer = styled.div`
@@ -51,8 +54,24 @@ const LogoContainer = styled.div`
 `
 const MenuContainer = styled.div`
     display: none;
+
+    @media only screen and (min-width: 992px) {
+        width: 40rem;
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        padding-right: 4rem;
+
+        span {
+            cursor: pointer;
+        }
+    }
 `
 
 const MobileMenuContainer = styled.div`
     padding-right: 4rem;
+
+    @media only screen and (min-width: 992px) {
+        display: none;
+    }
 `

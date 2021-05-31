@@ -8,8 +8,8 @@ function Hero() {
                 <h2>LAST CALL</h2>
                 <h2>UP TO 75% OFF SELECT STYLES</h2>
                 <a className='button-primary-white'>SHOP NOW</a>
-                <h3>APOLLO - DRESS TO IMPRESS</h3>
-                <h3>SINCE - 1997</h3>
+                <h3 className='motto-heading'>APOLLO - DRESS TO IMPRESS</h3>
+                <h3 className='year-heading'>SINCE - 1997</h3>
             </HeroContainer>
         </Container>
     )
@@ -18,8 +18,8 @@ function Hero() {
 export default Hero
 
 const Container = styled.div`
-    background: url('./images/mobile-hero-image5.jpg') no-repeat;
-    background-position: center top;
+    background: url('./images/mobile-hero-image2.jpg') no-repeat;
+    background-position: center center;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -27,7 +27,9 @@ const Container = styled.div`
     align-itmes: center;
 
     @media only screen and (min-width: 992px) {
-        background: url('./images/desktop-hero-image3.jpg');
+        background: url('./images/desktop-hero-image.jpg') no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
     }
 `
 
@@ -47,8 +49,24 @@ const HeroContainer = styled.div`
     h3 {
         display: none;
     }
-`
 
-const CTA = styled.button`
+    @media only screen and (min-width: 992px) {
+        
+        h3 {
+            display: block;
+            position: absolute;
+            font-size: 1rem;
+            
+        }
 
+        .year-heading {
+            right: 0rem;
+            transform: rotate(-90deg);
+        }
+
+        .motto-heading {
+            left: -3.5rem;
+            transform: rotate(-90deg);
+        }
+    }
 `

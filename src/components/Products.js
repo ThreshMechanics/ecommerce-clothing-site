@@ -32,7 +32,6 @@ const Container = styled.div`
 `
 
 const WatchContainer = styled.div`
-    width: 100%;
     height: 33%;
     background: url('./images/products-watch.jpg') no-repeat center;
     background-size: cover;
@@ -55,7 +54,6 @@ const WatchContainer = styled.div`
     }
 `
 const SuitContainer = styled.div`
-    width: 100%;
     height: 33%;
     background: url('./images/products-suit.jpg') no-repeat center;
     background-size: cover;
@@ -83,7 +81,6 @@ const SuitContainer = styled.div`
 `
 
 const ShoeContainer = styled.div`
-    width: 100%;
     height: 33%;
     background: url('./images/products-shoes.jpg') no-repeat center;
     background-size: cover;

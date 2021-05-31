@@ -58,7 +58,6 @@ const NewsletterContainer = styled.div`
         height: 50%;
         color: white;
         background-color: #161616; 
-        width: 100%;
         margin-left: 2rem;
     }
 `
